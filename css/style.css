@@ -141,7 +141,7 @@ ul li:hover {
 }
 
 .container .section:nth-child(1) {
-  background: rgba(0, 0, 0, 0.623) url("./img/main.png");
+  background: rgba(0, 0, 0, 0.623) url("../img/main.png");
   /* background: rgb(187, 81, 81); */
   background-size: cover;
   /* background-attachment: fixed; */
