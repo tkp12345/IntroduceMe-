@@ -88,7 +88,6 @@ ul li:hover {
 }
 
 .container .section-footer .footer-icon .github-icon {
-
   font-size: 3.5rem;
   color: rgb(0, 0, 0);
   cursor: pointer;
@@ -157,8 +156,7 @@ ul li:hover {
 }
 
 .container .section:nth-child(3) {
-  
-  background:linear-gradient(to right, #11998e, #38ef7d);
+  background: linear-gradient(to right, #11998e, #38ef7d);
   background-size: cover;
   /* background-attachment: fixed; */
 }
@@ -182,7 +180,7 @@ ul li:hover {
 }
 
 .container .section-footer:nth-child(7) {
-  background:linear-gradient(to right, #11998e, #38ef7d);
+  background: linear-gradient(to right, #11998e, #38ef7d);
   background-size: cover;
   /* background-attachment: fixed; */
 }
@@ -251,23 +249,33 @@ ul li:hover {
 .container .section .skill-content {
   position: absolute;
   top: 2vh;
-  left: 10vw;
+  left: 15vw;
   max-width: 50vw;
 }
 
-.container .section .skill-content .skill-title-front,.skill-title-backend{
-    color:rgba(255, 255, 255, 0.87);
+.container .section .skill-content .skill-title {
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.87);
 }
 
-.container .section .skill-content .skill-front, .skill-backend  {
+.container .section .skill-content .skill-title-front,
+.skill-title-backend {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.container .section .skill-content .skill-front {
   display: flex;
-  margin: 20px;
+  margin: 30px 30px 50px 30px;
 }
 
+.container .section .skill-content .skill-backend {
+  display: flex;
+  margin: 30px;
+}
 
 .skills i {
   font-size: 2rem;
-  margin:5px 10px 0px 10px;
+  margin: 5px 10px 0px 10px;
 }
 
 .skills {
@@ -285,9 +293,9 @@ ul li:hover {
 }
 
 .skills:hover {
-    box-shadow: 10px 10px 10px 0px rgb(90, 90, 90);
-    transform: translate(0, -5px);
-  }
+  box-shadow: 10px 10px 10px 0px rgb(90, 90, 90);
+  transform: translate(0, -5px);
+}
 
 .skill-front .skills:nth-child(1) {
   color: rgb(255, 136, 0);
@@ -302,18 +310,18 @@ ul li:hover {
   color: rgb(0, 247, 255);
 }
 
-.skills h4{
-    margin-top:7px;
-color:rgb(70, 69, 69);
+.skills h4 {
+  margin-top: 7px;
+  color: rgb(70, 69, 69);
 }
 
 .skill-backend .skills:nth-child(1) {
-    color: rgb(139, 27, 134);
-  }
+  color: rgb(139, 27, 134);
+}
 
-  .skill-backend .skills:nth-child(2) {
-    color: rgb(69, 218, 64);
-  }
+.skill-backend .skills:nth-child(2) {
+  color: rgb(69, 218, 64);
+}
 
 .container .section .content .subject span {
   line-height: 1.9;
@@ -343,7 +351,7 @@ color:rgb(70, 69, 69);
   font-size: 25px;
   margin-top: 1em;
 }
-
+/*======reponsive======*/
 @media only screen and (max-width: 480px) {
   ul {
     display: none;
@@ -355,6 +363,9 @@ color:rgb(70, 69, 69);
     display: none;
   }
   .container .section:nth-child(2) {
+    height: 30%;
+  }
+  .container .section:nth-child(3) {
     height: 30%;
   }
   .container .section .about-content {
@@ -374,22 +385,12 @@ color:rgb(70, 69, 69);
   }
 
   .container .section .content h2 {
-    /* color: rgba(0, 0, 0, 0.822);
-        font-weight: 600;
-        display: inline-block;
-        padding: 10px 0px; */
     font-size: 1.3rem;
   }
   .container .section .content .subject span {
-    /* line-height: 1.0;
-        letter-spacing: 0.2px; */
     line-height: 1;
     font-size: 0.1rem;
     padding: 2px 6px;
-    /* padding: 4px 12px;
-        border-radius: 100px;
-        color: rgba(255, 255, 255, 0.918);
-        font-weight: 700; */
   }
   .container .section .content p {
     font-size: 0.9rem;
@@ -397,12 +398,15 @@ color:rgb(70, 69, 69);
   .container .section .icon-bar {
     font-size: 1.5rem;
   }
-}
 
-/* @media only screen and (max-width: 700px){
-.myself_section {
-    display: inherit;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-} */
+  .container .section .skill-content .skill-front {
+    max-width: 400px;
+    min-width: 350px;
+    flex-wrap: wrap;
+  }
+
+  .container .section .skill-content .skill-front .skills:nth-child(3),
+  .skills:nth-child(4) {
+    margin-top: 20px;
+  }
+}
