@@ -162,19 +162,19 @@ ul li:hover {
 }
 
 .container .section:nth-child(4) {
-  background: url("./img/2.png");
+  background: url("../img/2.png");
   background-size: cover;
   /* background-attachment: fixed; */
 }
 
 .container .section:nth-child(5) {
-  background: url("./img/3.png");
+  background: url("../img/3.png");
   background-size: cover;
   /* background-attachment: fixed; */
 }
 
 .container .section:nth-child(6) {
-  background: url("./img/4.png");
+  background: url("../img/4.png");
   background-size: cover;
   /* background-attachment: fixed; */
 }
