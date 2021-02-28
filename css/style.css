@@ -8,6 +8,8 @@
 
 body {
   background: linear-gradient(to right, #11998e, #38ef7d);
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 ul {
@@ -409,7 +411,8 @@ ul li:hover {
     font-weight: 00;
   }
   .container .section:nth-child(2) {
-    
+    height: 100% !important;
+    top:0;
   }
 
   .container .section .skill-content {
