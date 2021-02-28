@@ -270,6 +270,9 @@ ul li:hover {
     color: rgba(255, 255, 255, 0.87);
 }
 
+
+
+
 .container .section .skill-content .skill-title:after {
     content: "";
     top: 100%;
@@ -281,7 +284,7 @@ ul li:hover {
 
 .container .section .skill-content .skill-title-front,
 .skill-title-backend {
-  color: rgba(255, 255, 255, 0.87);
+  color: rgba(255, 255, 255, 0.473);
 }
 
 .container .section .skill-content .skill-front {
@@ -412,29 +415,29 @@ ul li:hover {
   }
   .container .section:nth-child(1) {
     
-    height: 30%;
+    height: 60%;
   }
   .container .section:nth-child(2) {
-    height: 30%;
+    height: 55%;
   }
   .container .section:nth-child(3) {
-    height: 30%;
+    height: 65%;
     
   }
   .container .section:nth-child(4) {
     margin:10px 10px;
-    height: 30%;
+    
     border-radius: 40px;
     
   }
   .container .section:nth-child(5) {
-    margin:10px 0px;
-    height: 30%;
+    margin:10px 10px;
+    
     border-radius: 40px;
   }
   .container .section:nth-child(6) {
-    margin:10px 0px;
-    height: 30%;
+    margin:10px 10px;
+    
     border-radius: 40px;
     
   }
