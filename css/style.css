@@ -6,15 +6,13 @@
   padding: 0;
 }
 
-body{
-    background: linear-gradient(to right, #11998e, #38ef7d) ;
+body {
+  background: linear-gradient(to right, #11998e, #38ef7d);
 }
-
-
 
 ul {
   position: fixed;
-  top: 20px;
+  top: 15px;
   right: 10%;
   transform: translateY(-50%);
   z-index: 999;
@@ -26,7 +24,8 @@ ul li {
   list-style: none;
   float: left;
   text-align: center;
-  font-weight: 700;
+  height: 2.1rem;
+  font-weight: 600;
   background: rgba(112, 112, 111, 0.884);
 }
 
@@ -53,7 +52,6 @@ ul li:hover {
   background: rgba(68, 68, 68, 0.445);
 }
 .container {
-    
   position: relative;
   width: 100%;
   height: 100vh;
@@ -64,11 +62,7 @@ ul li:hover {
 }
 
 .container .section {
-  
-  
   position: relative;
-  /* width: 100%;
-  height: 100%; */
   scroll-snap-allign: start;
   background-blend-mode: multiply;
   width: 100%;
@@ -88,7 +82,7 @@ ul li:hover {
   position: relative;
   width: 100%;
   height: 30%;
-  color: rgba(24, 24, 24, 0.856);
+  color: rgba(255, 255, 255, 0.479);
 }
 
 .container .section-footer .footer-icon .fas {
@@ -104,7 +98,7 @@ ul li:hover {
 }
 
 .container .section-footer .footer-icon .email-icon {
-  color: rgba(54, 54, 54, 0.767);
+  color: rgba(59, 226, 255, 0.418);
 }
 
 .container .section-footer .footer-icon .phone-icon {
@@ -160,36 +154,43 @@ ul li:hover {
 .container .section:nth-child(2) {
   background: rgb(255, 255, 255);
   background-size: cover;
-
-  background-attachment: fixed;
+  height: 100% !important;
+  padding-top: 0;
 }
 
 .container .section:nth-child(3) {
   background: linear-gradient(to right, #11998e, #38ef7d);
   background-size: cover;
+  height: 65% !important;
+  padding-top: 0;
+
   /* background-attachment: fixed; */
 }
 
 .container .section:nth-child(4) {
   background: url("../img/portfolio-1.png");
   background-size: cover;
+  margin: 0px 0px 100px 0px;
   /* background-attachment: fixed; */
 }
 
 .container .section:nth-child(5) {
   background: url("../img/portfolio-2.png");
   background-size: cover;
+  margin: 100px 0px;
   /* background-attachment: fixed; */
 }
 
 .container .section:nth-child(6) {
-  background:url("../img/portfolio-3.png");
+  background: url("../img/portfolio-3.png");
   background-size: cover;
+  margin: 100px 0px 0px 0px;
   /* background-attachment: fixed; */
 }
 
 .container .section-footer:nth-child(7) {
-  background: linear-gradient(to right, #11998e, #38ef7d);
+  background: rgb(58, 58, 58);
+  height: 30% !important;
   background-size: cover;
   /* background-attachment: fixed; */
 }
@@ -257,30 +258,41 @@ ul li:hover {
 /*======section #3======*/
 .container .section .skill-content {
   position: absolute;
-  top: 2vh;
+  top: 10vh;
   left: 15vw;
   max-width: 50vw;
 }
 
 .container .section .skill-content .skill-title {
-    left: 20px;
-    display: inline-block;
-    text-shadow: 1px 1px #999898a9;
-    margin-bottom: 20px;
-    color: rgba(255, 255, 255, 0.87);
+  left: 20px;
+  letter-spacing: 3px;
+  display: inline-block;
+  text-shadow: 1px 1px #999898a9;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.938);
+  text-align: center;
 }
 
+.portfolio-title{
+    left: 20px;
+    letter-spacing: 3px;
+    display: inline-block;
+    text-shadow: 1px 1px #999898a9;
+    position: absolute;
+    top: -15vh;
+    max-width: 50vw;
+    color: rgba(255, 255, 255, 0.938);
+}
 
-
-
+/* 
 .container .section .skill-content .skill-title:after {
-    content: "";
-    top: 100%;
-    display: block;
-    width: 100%;
-    border-bottom: 4px solid #ffffff;
-    margin: 10px 0px 20px 0px;
-  }
+  content: "";
+  top: 100%;
+  display: block;
+  width: 100%;
+  border-bottom: 2px solid #ffffff;
+  margin: 10px 0px 20px 0px;
+} */
 
 .container .section .skill-content .skill-title-front,
 .skill-title-backend {
@@ -346,7 +358,9 @@ ul li:hover {
 .skill-backend .skills:nth-child(2) {
   color: rgb(69, 218, 64);
 }
-
+.container .section .content .subject {
+  margin-top: 20px;
+}
 .container .section .content .subject span {
   line-height: 1.9;
   letter-spacing: 0.2px;
@@ -378,34 +392,31 @@ ul li:hover {
 /*======reponsive======*/
 @media only screen and (max-width: 480px) {
   ul {
-   
   }
 
   .container .section .wrap .introduce-text {
     font-size: 0.9rem;
-}
-
-.container .section .about-content .about-title {
-    font-size: 0.7rem;
-    color:rgb(65, 64, 64)
   }
-.container .section .about-content .about-info {
-    color:rgb(75, 75, 75);
+
+  .container .section .about-content .about-title {
+    font-size: 0.7rem;
+    color: rgb(65, 64, 64);
+  }
+  .container .section .about-content .about-info {
+    color: rgb(75, 75, 75);
     text-align: left;
     font-size: 0.9rem;
     font-weight: 00;
   }
+  .container .section:nth-child(2) {
+    
+  }
 
   .container .section .skill-content {
     position: absolute;
-    top: 2vh;
+    
     left: 3vw;
     max-width: 50vw;
-  }
-  .container .section .skill-content .skill-title{
-     
-    
-     
   }
 }
 
@@ -414,32 +425,22 @@ ul li:hover {
     display: none;
   }
   .container .section:nth-child(1) {
-    
-    height: 60%;
+    height: 30%;
   }
   .container .section:nth-child(2) {
-    height: 55%;
+    height: 60% !important;
   }
   .container .section:nth-child(3) {
-    height: 65%;
     
   }
   .container .section:nth-child(4) {
-    margin:10px 10px;
-    
-    border-radius: 40px;
-    
+    margin: 60px 0px;
   }
   .container .section:nth-child(5) {
-    margin:10px 10px;
-    
-    border-radius: 40px;
+    margin: 60px 0px;
   }
   .container .section:nth-child(6) {
-    margin:10px 10px;
-    
-    border-radius: 40px;
-    
+    margin: 60px 0px 0px 0px;
   }
   .container .section .about-content {
     top: 1%;
@@ -458,11 +459,11 @@ ul li:hover {
   }
 
   .container .section .content h2 {
-    font-size: 1.0rem;
+    font-size: 1rem;
   }
   .container .section .content .subject span {
     line-height: 1;
-    font-size: 1px;
+    font-size: 0.2rem;
     font-weight: 700;
     padding: 2px 6px;
   }
@@ -470,7 +471,7 @@ ul li:hover {
     font-size: 0.3rem;
   }
   .container .section .icon-bar {
-    font-size: 1.0rem;
+    font-size: 1rem;
   }
 
   .container .section .skill-content .skill-front {
