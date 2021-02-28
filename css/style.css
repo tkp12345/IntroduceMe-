@@ -8,8 +8,6 @@
 
 body {
   background: linear-gradient(to right, #11998e, #38ef7d);
-  max-width: 100%;
-  overflow-x: hidden;
 }
 
 ul {
@@ -424,6 +422,11 @@ ul li:hover {
 }
 
 @media only screen and (max-width: 840px) {
+    body{
+        max-width: 100%;
+        width: 100%;
+
+    }
   .container .section .about-text {
     display: none;
   }
