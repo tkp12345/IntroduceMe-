@@ -422,8 +422,12 @@ ul li:hover {
 }
 
 @media only screen and (max-width: 840px) {
+    body{
+        overflow-x: hidden;
+        width: 100%;
+    }
     .section{
-        max-width: 100%;
+        overflow-x: hidden;
         width: 100%;
 
     }
