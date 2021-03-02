@@ -26,15 +26,12 @@ ul li {
   font-weight: 600;
   background: rgba(112, 112, 111, 0.884);
 }
-
 ul li:nth-child(1) {
   border-radius: 0px 0px 0px 20px;
 }
-
 ul li:nth-child(4) {
   border-radius: 0px 0px 20px 0px;
 }
-
 ul li a {
   display: block;
   text-decoration: none;
@@ -45,7 +42,6 @@ ul li a {
   color: rgba(255, 255, 255, 0.884);
   line-height: 30px;
 }
-
 ul li:hover {
   background: rgba(68, 68, 68, 0.445);
 }
@@ -109,7 +105,6 @@ ul li:hover {
   height: 30% !important;
   background-size: cover;
 }
-
 /*======section-1======*/
 .container .section .wrap {
   position: absolute;
@@ -128,12 +123,10 @@ ul li:hover {
   font-weight: bold;
   white-space: nowrap;
 }
-
 #typing {
   position: relative;
   display: inline-block;
 }
-
 #typing::after {
   content: "";
   display: block;
@@ -144,11 +137,9 @@ ul li:hover {
   height: 100%;
   background-color: rgb(255, 255, 255);
 }
-
 #typing.active::after {
   display: none;
 }
-
 /*======section-2======*/
 .container .section .about-text {
   position: absolute;
@@ -157,7 +148,6 @@ ul li:hover {
   left: 50px;
   max-width: 30vw;
 }
-
 .container .section .about-content {
   position: absolute;
   top: 30%;
@@ -167,11 +157,9 @@ ul li:hover {
   margin-bottom: 4rem;
   padding: 1rem;
 }
-
 .container .section .about-content .about-title {
   display: inline-block;
 }
-
 .container .section .about-content .about-title:after {
   content: "";
   top: 100%;
@@ -187,7 +175,6 @@ ul li:hover {
   left: 15vw;
   max-width: 50vw;
 }
-
 .container .section .skill-content .skill-title {
   left: 20px;
   letter-spacing: 3px;
@@ -248,7 +235,6 @@ ul li:hover {
 .skill-backend .skills:nth-child(2) {
   color: rgb(69, 218, 64);
 }
-
 .skills h3 {
   font-size: 1rem;
   text-align: center;
@@ -278,13 +264,13 @@ ul li:hover {
   background-color: #f3bc09;
 }
 .container .section .content .subject span {
-    line-height: 1;
-    font-size: 0.5rem;
-    font-weight: 600;
-    padding: 3px 7px;
-    border-radius: 100px;
-    color:rgb(255, 255, 255);
-  }
+  line-height: 1;
+  font-size: 0.5rem;
+  font-weight: 600;
+  padding: 3px 7px;
+  border-radius: 100px;
+  color: rgb(255, 255, 255);
+}
 .container .section .content p {
   color: rgba(0, 0, 0, 0.822);
   font-weight: bold;
@@ -323,33 +309,24 @@ ul li:hover {
   height: 30%;
   color: rgba(255, 255, 255, 0.479);
 }
-
 .container .section-footer .footer-icon .fas {
   margin-right: 10px;
   margin-bottom: 10px;
 }
-
 .container .section-footer .footer-icon .github-icon {
   font-size: 3.5rem;
   color: rgb(0, 0, 0);
   cursor: pointer;
   margin-bottom: 7px;
 }
-
 .container .section-footer .footer-icon .email-icon {
   color: rgba(59, 226, 255, 0.418);
 }
-
 .container .section-footer .footer-icon .phone-icon {
   color: rgba(201, 66, 66, 0.788);
 }
-
 /*======reponsive======*/
 @media only screen and (max-width: 480px) {
-  ul {
-  
-  }
-
   .container .section .wrap .introduce-text {
     font-size: 0.9rem;
   }
@@ -375,7 +352,6 @@ ul li:hover {
     max-width: 50vw;
   }
 }
-
 @media only screen and (max-width: 840px) {
   .container .section .about-text {
     display: none;
@@ -390,7 +366,6 @@ ul li:hover {
   }
   .container .section:nth-child(4) {
     margin: 60px 0px;
-
   }
   .container .section:nth-child(5) {
     margin: 60px 0px;
@@ -407,13 +382,11 @@ ul li:hover {
     max-width: 90vw;
     min-height: 50vh;
   }
-
   .container .section .content {
     max-width: 45vw;
     bottom: 5vh;
     left: 3vw;
   }
-
   .container .section .content h2 {
     font-size: 1rem;
   }
@@ -428,13 +401,11 @@ ul li:hover {
   .container .section .icon-bar {
     font-size: 1rem;
   }
-
   .container .section .skill-content .skill-front {
     max-width: 400px;
     min-width: 350px;
     flex-wrap: wrap;
   }
-
   .container .section .skill-content .skill-front .skills:nth-child(3),
   .skills:nth-child(4) {
     margin-top: 20px;
