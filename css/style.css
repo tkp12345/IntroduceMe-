@@ -170,7 +170,7 @@ ul li:hover {
 }
 /*======section-3======*/
 .container .section .skill-content {
-  position: absolute;
+  position: relative;
   top: 10vh;
   left: 15vw;
   max-width: 50vw;
@@ -196,10 +196,6 @@ ul li:hover {
   display: flex;
   margin: 30px;
 }
-.skills i {
-  font-size: 2rem;
-  margin: 5px 10px 0px 10px;
-}
 .skills {
   display: flex;
   width: 130px;
@@ -212,11 +208,16 @@ ul li:hover {
   transform: 2s;
   transition: 0.4s;
   flex-shrink: 0;
+  cursor: pointer;
+  z-index: 5;
+  
+  
 }
-.skills:hover {
+.skills:hover{
   box-shadow: 10px 10px 10px 0px rgb(90, 90, 90);
   transform: translate(0, -5px);
 }
+
 .skill-front .skills:nth-child(1) {
   color: rgb(255, 136, 0);
 }
@@ -235,6 +236,16 @@ ul li:hover {
 .skill-backend .skills:nth-child(2) {
   color: rgb(69, 218, 64);
 }
+
+.popup-link{
+    
+    
+}
+ 
+.skills i {
+    font-size: 2rem;
+    margin: 5px 10px 0px 10px;
+  }
 .skills h3 {
   font-size: 1rem;
   text-align: center;
@@ -242,6 +253,54 @@ ul li:hover {
   margin-top: 7px;
   color: rgba(32, 32, 32, 0.911);
 }
+.skill-popup{
+  left: 15vw;
+    position: absolute;
+    top:20%;
+    /* left:40px; */
+    width:70%;
+    height: 60%;
+    /* border-top: 30px; */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0,0.5);
+    border-radius: 5px;
+    text-align: right;
+    /* text-decoration: none; */
+    padding: 20px;
+    opacity: 0;
+    background: #ffffffd7;
+    transition: all 0.5s;
+  
+  
+     
+}
+.skill-popup:target{
+    opacity: 1;
+    z-index: 10;
+}
+.skill-popup:target + .dim{
+    opacity: 1;
+    z-index: 6;
+   
+}
+.dim{
+    transition: all 0.5s;
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    opacity: 0;
+    z-index: 3;
+}
+ 
+
+/* .container .section .skill-content {
+    position: absolute;
+    top: 10vh;
+    left: 15vw;
+    max-width: 50vw;
+  } */
 
 /*======portfilio======*/
 .container .section .content {
