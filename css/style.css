@@ -1,15 +1,14 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 * {
   margin: 0;
   padding: 0;
 }
 body {
-  background: linear-gradient(to right, #11998e, #38ef7d);
+  background: linear-gradient(to right, #11998e, #a18528);
 }
 /*======menu======*/
 ul {
+  font-family: "Noto Sans KR", sans-serif;
   position: fixed;
   top: 15px;
   right: 10%;
@@ -80,27 +79,42 @@ ul li:hover {
   padding-top: 0;
 }
 .container .section:nth-child(3) {
-  background: linear-gradient(to right, #11998e, #38ef7d);
+  background: linear-gradient(to right, #11998e, #a18528);
   background-size: cover;
   height: 65% !important;
   padding-top: 0;
 }
+
 .container .section:nth-child(4) {
+  background: url("../img/portfolio-4.png");
+  background-size: cover;
+  margin: 0px 0px 100px 0px;
+}
+
+.container .section:nth-child(5) {
+  background: url("../img/portfolio-5.png");
+  background-size: cover;
+  margin: 0px 0px 100px 0px;
+}
+
+.container .section:nth-child(6) {
   background: url("../img/portfolio-1.png");
   background-size: cover;
   margin: 0px 0px 100px 0px;
 }
-.container .section:nth-child(5) {
-  background: url("../img/portfolio-2.png");
+
+.container .section:nth-child(7) {
+  background: url("../img/portfolio-3.png");
   background-size: cover;
   margin: 100px 0px;
 }
-.container .section:nth-child(6) {
-  background: url("../img/portfolio-3.png");
+.container .section:nth-child(8) {
+  background: url("../img/portfolio-2.png");
+
   background-size: cover;
   margin: 100px 0px 0px 0px;
 }
-.container .section-footer:nth-child(7) {
+.container .section-footer:nth-child(9) {
   background: rgb(58, 58, 58);
   height: 30% !important;
   background-size: cover;
@@ -210,42 +224,53 @@ ul li:hover {
   flex-shrink: 0;
   cursor: pointer;
   z-index: 5;
-  
-  
 }
-.skills:hover{
+.skills:hover {
   box-shadow: 10px 10px 10px 0px rgb(90, 90, 90);
   transform: translate(0, -5px);
 }
 
-.skill-front .skills:nth-child(1) {
-  color: rgb(255, 136, 0);
-}
-.skill-front .skills:nth-child(2) {
-  color: rgb(0, 119, 255);
-}
-.skill-front .skills:nth-child(3) {
-  color: rgb(238, 195, 4);
-}
-.skill-front .skills:nth-child(4) {
-  color: rgb(0, 247, 255);
-}
-.skill-backend .skills:nth-child(1) {
-  color: rgb(139, 27, 134);
-}
-.skill-backend .skills:nth-child(2) {
-  color: rgb(69, 218, 64);
+.skills a {
+  text-decoration: none;
+  display: inline;
 }
 
-.popup-link{
-    
-    
+.skills-content {
+  display: flex;
 }
- 
+.icon-title {
+  margin-top: 50px;
+  font-size: 1.5rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.658);
+  opacity: 0.4;
+  font-weight: 600;
+  text-shadow: 1px 1px #999898a9;
+}
+
+.skill-front .skills:nth-child(1) .skills-content i {
+  color: rgb(255, 136, 0);
+}
+.skill-front .skills:nth-child(2) .skills-content i {
+  color: rgb(0, 119, 255);
+}
+.skill-front .skills:nth-child(3) .skills-content i {
+  color: rgb(238, 195, 4);
+}
+.skill-front .skills:nth-child(4) .skills-content i {
+  color: rgb(4, 183, 189);
+}
+.skill-backend .skills:nth-child(1) .skills-content i {
+  color: rgb(139, 27, 134);
+}
+.skill-backend .skills:nth-child(2) .skills-content i {
+  color: rgb(80, 192, 76);
+}
+
 .skills i {
-    font-size: 2rem;
-    margin: 5px 10px 0px 10px;
-  }
+  font-size: 2rem;
+  margin: 5px 10px 0px 10px;
+}
 .skills h3 {
   font-size: 1rem;
   text-align: center;
@@ -253,47 +278,67 @@ ul li:hover {
   margin-top: 7px;
   color: rgba(32, 32, 32, 0.911);
 }
-.skill-popup{
+.skill-popup {
   left: 15vw;
-    position: absolute;
-    top:20%;
-    /* left:40px; */
-    width:70%;
-    height: 60%;
-    /* border-top: 30px; */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0,0.5);
-    border-radius: 5px;
-    text-align: right;
-    /* text-decoration: none; */
-    padding: 20px;
-    opacity: 0;
-    background: #ffffffd7;
-    transition: all 0.5s;
+  position: fixed;
+  top: 20%;
+  /* left:40px; */
+  width: 40%;
+  height: 25%;
+  /* border-top: 30px; */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  text-align: right;
+  /* text-decoration: none; */
+  padding: 20px;
+  opacity: 0;
+  background: #ffffffe5;
+  font-weight: 500;
+  font-family: "Noto Sans KR", sans-serif;
+  letter-spacing: 2px;
+  transition: all 0.5s;
+}
+.skill-popup:target {
+  opacity: 1;
+  z-index: 10;
+}
+.skill-popup:target + .dim {
+  opacity: 1;
+  z-index: 6;
+}
+.dim {
+  transition: all 0.5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(31, 30, 30, 0.788);
+  opacity: 0;
+  z-index: 3;
+}
+
+.skill-popup .popup-close a {
+  padding: 10px;
+  color: #ffffffcb;
+  font-size: 0.9rem;
+  border-radius: 12px;
+  background: rgba(61, 68, 57, 0.616);
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.skill-popup .popup-close a:hover {
+  background: rgba(221, 78, 78, 0.753);
   
-  
-     
 }
-.skill-popup:target{
-    opacity: 1;
-    z-index: 10;
+
+.skill-popup .popup-content {
+  margin-top: 10%;
+  padding-left: 20px;
+  text-align: left;
+  font-size: 1.2rem;
 }
-.skill-popup:target + .dim{
-    opacity: 1;
-    z-index: 6;
-   
-}
-.dim{
-    transition: all 0.5s;
-    position:absolute;
-    top:0;
-    left:0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.6);
-    opacity: 0;
-    z-index: 3;
-}
- 
 
 /* .container .section .skill-content {
     position: absolute;
@@ -410,6 +455,19 @@ ul li:hover {
     left: 3vw;
     max-width: 50vw;
   }
+  .skill-popup {
+     
+      left:7vw;
+    
+    width: 70%;
+    height: 40%;
+    /* border-top: 30px; */
+    
+  }
+  .icon-title {
+    margin-top: 20px;
+    
+  }
 }
 @media only screen and (max-width: 840px) {
   .container .section .about-text {
@@ -468,5 +526,9 @@ ul li:hover {
   .container .section .skill-content .skill-front .skills:nth-child(3),
   .skills:nth-child(4) {
     margin-top: 20px;
+  }
+  .skill-popup .popup-content {
+     
+    font-size: 1.0rem;
   }
 }
