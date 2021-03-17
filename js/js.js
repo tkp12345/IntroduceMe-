@@ -23,7 +23,7 @@ function type(randomArr) {
       type(randomArr);
     }, 100);
   } else {
-    setTimeout(resetType, 3000);
+    setTimeout(resetType, 10000);
   }
 }
 

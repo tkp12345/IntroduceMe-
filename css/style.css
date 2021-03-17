@@ -4,7 +4,7 @@
   padding: 0;
 }
 body {
-  background: linear-gradient(to right, #11998e, #a18528);
+  background:linear-gradient(to right, #474747a8, #292929);
 }
 /*======menu======*/
 ul {
@@ -81,7 +81,7 @@ ul li:hover {
 .container .section:nth-child(3) {
   background: linear-gradient(to right, #11998e, #a18528);
   background-size: cover;
-  height: 65% !important;
+  height: 80% !important;
   padding-top: 0;
 }
 
@@ -162,6 +162,11 @@ ul li:hover {
   left: 50px;
   max-width: 30vw;
 }
+
+.container .section .about-text h1 span{
+  font-size: 3.5rem;
+  color: #086d647c;
+}
 .container .section .about-content {
   position: absolute;
   top: 30%;
@@ -185,7 +190,7 @@ ul li:hover {
 /*======section-3======*/
 .container .section .skill-content {
   position: relative;
-  top: 10vh;
+  top: 15vh;
   left: 15vw;
   max-width: 50vw;
 }
@@ -330,7 +335,6 @@ ul li:hover {
 
 .skill-popup .popup-close a:hover {
   background: rgba(221, 78, 78, 0.753);
-  
 }
 
 .skill-popup .popup-content {
@@ -358,6 +362,9 @@ ul li:hover {
   text-align: left;
   font-weight: 600;
 }
+.container .section .content .subject{
+  margin-top: 10px;
+}
 .container .section .content .subject span:nth-child(1) {
   background-color: #db5f0def;
 }
@@ -369,9 +376,10 @@ ul li:hover {
 }
 .container .section .content .subject span {
   line-height: 1;
-  font-size: 0.5rem;
+  font-size: 0.8rem;
   font-weight: 600;
-  padding: 3px 7px;
+  padding: 5px 10px;
+   
   border-radius: 100px;
   color: rgb(255, 255, 255);
 }
@@ -456,18 +464,18 @@ ul li:hover {
     max-width: 50vw;
   }
   .skill-popup {
-     
-      left:7vw;
-    
+    left: 7vw;
+
     width: 70%;
     height: 40%;
     /* border-top: 30px; */
-    
   }
   .icon-title {
     margin-top: 20px;
-    
   }
+
+   
+  
 }
 @media only screen and (max-width: 840px) {
   .container .section .about-text {
@@ -491,6 +499,7 @@ ul li:hover {
     margin: 60px 0px 0px 0px;
   }
   .container .section .about-content {
+    padding:10px;
     top: 1%;
     left: 1%;
     text-align: center;
@@ -498,6 +507,9 @@ ul li:hover {
     height: 0;
     max-width: 90vw;
     min-height: 50vh;
+  }
+  .container .section .about-content .about-info {
+    font-size:0.8rem;
   }
   .container .section .content {
     max-width: 45vw;
@@ -528,7 +540,11 @@ ul li:hover {
     margin-top: 20px;
   }
   .skill-popup .popup-content {
+    font-size: 1rem;
+  }
+  .container .section .skill-content {
      
-    font-size: 1.0rem;
+    top: 10vh;
+     
   }
 }
