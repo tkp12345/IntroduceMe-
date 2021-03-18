@@ -32,4 +32,4 @@ type(randomText());
 function blink() {
   typing.classList.toggle("active");
 }
-setInterval(blink, 600);
+setInterval(blink, 700);

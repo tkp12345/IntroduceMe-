@@ -68,7 +68,7 @@ ul li:hover {
 
 /*======background-img======*/
 .container .section:nth-child(1) {
-  background: rgba(0, 0, 0, 0.623) url("../img/main.png");
+  background: rgba(0, 0, 0, 0.623) url("../img/main.jpg");
   background-size: cover;
   background-blend-mode: multiply;
 }
@@ -86,30 +86,30 @@ ul li:hover {
 }
 
 .container .section:nth-child(4) {
-  background: url("../img/portfolio-4.png");
+  background: url("../img/portfolio-4.jpg");
   background-size: cover;
   margin: 0px 0px 100px 0px;
 }
 
 .container .section:nth-child(5) {
-  background: url("../img/portfolio-5.png");
+  background: url("../img/portfolio-5.jpg");
   background-size: cover;
   margin: 0px 0px 100px 0px;
 }
 
 .container .section:nth-child(6) {
-  background: url("../img/portfolio-1.png");
+  background: url("../img/portfolio-1.jpg");
   background-size: cover;
   margin: 0px 0px 100px 0px;
 }
 
 .container .section:nth-child(7) {
-  background: url("../img/portfolio-3.png");
+  background: url("../img/portfolio-3.jpg");
   background-size: cover;
   margin: 100px 0px;
 }
 .container .section:nth-child(8) {
-  background: url("../img/portfolio-2.png");
+  background: url("../img/portfolio-2.jpg");
 
   background-size: cover;
   margin: 100px 0px 0px 0px;
